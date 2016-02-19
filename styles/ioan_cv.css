@@ -1,0 +1,238 @@
+
+body, html { height: 100%; }
+body {
+ 
+   min-width: 100%;
+}
+a { color: #8080ff; text-decoration: none; cursor: pointer; }
+a:hover { text-decoration: underline; }
+
+  .stage {
+         position: relative;
+        top: 30px;
+        left: 50px;
+        width: 100%;
+        height: 600px;
+        overflow: hidden;
+      }
+  #my-cv {
+     z-index: 0;
+     position: absolute;
+     top: 50px;
+     left: 265px;
+   }
+ #container {
+     height:100%;
+   }
+ 
+ #bunny {
+         background: transparent url(../images/mybunny.png) 0 0 no-repeat;
+         position: absolute;
+         top: 0;
+         left: 10px;
+         width: 120px;
+         height: 105px;
+    
+      }
+      #intro { z-index: 2; 
+ 
+                        position: absolute;
+ 
+ left: 0;
+ background: transparent url(../images/intro.png) no-repeat;
+ 
+  }
+      #astral { z-index: 2; 
+ 
+                        position: absolute;
+                        left: 20px;
+ background: transparent url(../images/astral.png)no-repeat;
+  
+  }
+#adn { z-index: 2; 
+ 
+                        position: absolute;
+                        left: 20px;
+ background: transparent url(../images/adn.png) no-repeat;
+
+
+  }
+ #diana { z-index: 2; 
+ 
+                        position: absolute;
+                        left: 20px;
+ background: transparent url(../images/diana.png) no-repeat;
+  
+
+  }
+     #final { z-index: 2; 
+ 
+                        position: absolute;
+                        left: 20px;
+ background: transparent url(../images/finish.png) no-repeat;
+  
+  } 
+
+ #inline { display: none; width: 800px; }
+label { margin-right: 12px; margin-bottom: 9px; font-family: Georgia, serif; color: #646464; font-size: 1.2em; }
+
+a { color: #3a51b2; text-decoration: none; }
+a:hover { text-decoration: underline; }
+
+h2 { font-size: 1.4em; line-height: 1.9em; margin-bottom: 15px;  }
+
+span { font-size: 1.1em; line-height: 1.9em; margin-bottom: 10px;  }
+
+li{ font-size: 1.2em; line-height: 1.5em; margin-bottom: 15px;  }
+
+p { color: #656565; font-size: 1.3em; margin-bottom: 10px; }
+
+
+.txt { 
+display: inline-block; 
+color: #676767;
+width: 420px; 
+font-family: Arial, Tahoma, sans-serif; 
+margin-bottom: 10px; 
+border: 1px dotted #ccc; 
+padding: 5px 9px;
+font-size: 1.2em;
+line-height: 1.4em;
+}
+
+.txtarea { 
+display: block; 
+resize: none;
+color: #676767;
+font-family: Arial, Tahoma, sans-serif; 
+margin-bottom: 10px; 
+width: 500px; 
+height: 150px;
+border: 1px dotted #ccc;
+padding: 5px 9px; 
+font-size: 1.2em;
+line-height: 1.4em;
+}
+
+.txt:focus, .txtarea:focus { border-style: solid; border-color: #bababa; color: #444; }
+
+input.error, textarea.error { border-color: #973d3d; border-style: solid; background: #f0bebe; color: #a35959; }
+input.error:focus, textarea.error:focus { border-color: #973d3d; color: #a35959; }
+
+#send { 
+color: #dee5f0;
+display: block;
+cursor: pointer;
+padding: 5px 11px;
+font-size: 1.2em;
+border: solid 1px #224983;
+border-radius: 5px;
+background: #1e4c99; 
+background: -webkit-gradient(linear, left top, left bottom, from(#2f52b7), to(#0e3a7d)); 
+background: -moz-linear-gradient(top, #2f52b7, #0e3a7d); 
+background: -webkit-linear-gradient(top, #2f52b7, #0e3a7d);
+background: -o-linear-gradient(top, #2f52b7, #0e3a7d);
+background: -ms-linear-gradient(top, #2f52b7, #0e3a7d);
+background: linear-gradient(top, #2f52b7, #0e3a7d);
+filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#2f52b7', endColorstr='#0e3a7d'); 
+}
+#send:hover {
+background: #183d80; 
+background: -webkit-gradient(linear, left top, left bottom, from(#284f9d), to(#0c2b6b)); 
+background: -moz-linear-gradient(top,  #284f9d, #0c2b6b); 
+background: -webkit-linear-gradient(top, #284f9d, #0c2b6b);
+background: -o-linear-gradient(top, #284f9d, #0c2b6b);
+background: -ms-linear-gradient(top, #284f9d, #0c2b6b);
+background: linear-gradient(top, #284f9d, #0c2b6b);
+filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#284f9d', endColorstr='#0c2b6b');
+}
+#send:active {
+color: #8c9dc0; 
+background: -webkit-gradient(linear, left top, left bottom, from(#0e387d), to(#2f55b7)); 
+background: -moz-linear-gradient(top,  #0e387d,  #2f55b7);
+background: -webkit-linear-gradient(top, #0e387d, #2f55b7);
+background: -o-linear-gradient(top, #0e387d, #2f55b7);
+background: -ms-linear-gradient(top, #0e387d, #2f55b7);
+background: linear-gradient(top, #0e387d, #2f55b7);
+filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#0e387d', endColorstr='#2f55b7');
+}
+@media only screen and ( max-width: 767px){
+
+  .stage {
+         position: relative;
+        top: 0;
+        left: 20px;
+        width: 100%;
+          height: 500px;
+         overflow: hidden;
+      }
+  
+      #intro {
+ left: 0;
+  -webkit-background-size: 60%;
+  -moz-background-size: 60%;
+  -o-background-size: 60%;
+  background-size: 60%;
+ 
+  }
+     #astral {
+    left: 0;
+ -webkit-background-size: 70%;
+  -moz-background-size: 70%;
+  -o-background-size: 70%;
+  background-size: 70%;
+   }
+ #adn {
+                       left: 0;
+  -webkit-background-size: 70%;
+  -moz-background-size: 70%;
+  -o-background-size: 70%;
+  background-size: 70%;
+  
+
+  }
+ #diana {  
+  left: 0;
+ -webkit-background-size: 60%;
+  -moz-background-size: 60%;
+  -o-background-size: 60%;
+  background-size: 60%;
+ 
+  }
+     #final {   
+   left: 0;
+   -webkit-background-size: 60%;
+  -moz-background-size: 60%;
+  -o-background-size: 60%;
+  background-size: 60%;
+ 
+  } 
+ #inline { display: none; width: 600px; }
+label { margin-right: 6px; margin-bottom: 5px; font-family: Georgia, serif; color: #646464; font-size: 1em; }
+h2 { font-size: 1.4em; line-height: 1.9em; margin-bottom: 10px;  }
+
+span { font-size: 0.7em; line-height: 1.5em; margin-bottom: 8px;  }
+
+li{ font-size: 1em; line-height: 1em; margin-bottom: 10px;  }
+
+p { color: #656565; font-size: 0.6em; margin-bottom: 8px; }
+
+.txt { 
+display: inline-block; 
+width: 220px; 
+font-size: 0.8em;
+line-height: 1em;
+}
+.txtarea { 
+width: 300px; 
+height: 100px;
+font-size: 0.7em;
+line-height: 1em;
+}
+#send { 
+font-size: 1em;
+}
+
+
+}
+
